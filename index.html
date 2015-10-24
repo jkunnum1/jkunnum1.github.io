@@ -1,55 +1,120 @@
 <html>
 <header>
 <style>
-
 </style>
+<script type="text/javascript">
+var num = 0
+function boxclick(eleID) {
+	if (num % 2 == 0)
+	{
+		document.getElementById(eleID).innerHTML = 'X';
+		document.getElementById(eleID).onclick = null;
+		a1 = document.getElementById(eleID).value = 'x';
+	}
+	else
+	{
+		document.getElementById(eleID).innerHTML = 'O';
+		document.getElementById(eleID).onclick = null;
+		a1 = document.getElementById(eleID).value = 'o';
+	}
+	num = num + 1;
+	checkWinner()
+}
+function checkWinner(){
+	a1 = document.getElementById("a1").value;
+	a2 = document.getElementById("a2").value;
+	a3 = document.getElementById("a3").value;
+	b1 = document.getElementById("b1").value;
+	b2 = document.getElementById("b2").value;
+	b3 = document.getElementById("b3").value;
+	c1 = document.getElementById("c1").value;
+	c2 = document.getElementById("c2").value;
+	c3 = document.getElementById("c3").value;
+
+	// check to see who won, if there is one
+	if ((a1 == a2 && a2 == a3 && (a1 == 'x')) ||
+		(a1 == b2 && b2 == c3 && (a1 == 'x')) ||
+		(a1 == b1 && b1 == c1 && (a1 == 'x')) ||
+		(b1 == b2 && b2 == b3 && (b1 == 'x')) ||
+		(c1 == b2 && b2 == a3 && (c1 == 'x')) ||
+		(c1 == c2 && c2 == c3 && (c1 == 'x')) ||
+		(a2 == b2 && b2 == c2 && (a2 == 'x')) ||
+		(a3 == b3 && b3 == c3 && (a3 == 'x'))
+		){
+		document.getElementById("test").innerHTML = "X IS THE WINNER!!";
+	}
+	else{
+		if ((a1 == a2 && a2 == a3 && (a1 == 'o')) ||
+		(a1 == b2 && b2 == c3 && (a1 == 'o')) ||
+		(a1 == b1 && b1 == c1 && (a1 == 'o')) ||
+		(b1 == b2 && b2 == b3 && (b1 == 'o')) ||
+		(c1 == b2 && b2 == a3 && (c1 == 'o')) ||
+		(c1 == c2 && c2 == c3 && (c1 == 'o')) ||
+		(a2 == b2 && b2 == c2 && (a2 == 'o')) ||
+		(a3 == b3 && b3 == c3 && (a3 == 'o'))
+		){
+		document.getElementById("test").innerHTML = "O IS THE WINNER!!";
+	}
+		
+}
+}
+</script>
 </header>
 
 <body>
 <marquee style="font-size:100; color:blue" scrollamount="20">
-	My name is Julie
+	Let's Play Tic-Tac-Toe!
 	</marquee>
-<p style="font-size:30; color:orange; text-align:center">
-	I'm learning how to make a tic tac toe game!!</p>
+	<div id="test" style="font-size:30; color:orange; text-align:center">
+		
+	</div>
 	<div style="position: relative; left:0; top:0;">
 		<center> <img src="tttboard.png"> </center>
-		<div id="boxone" style="position: absolute; top:0px; left:370px;">
-		<img src="otictactoe.png">
+		<div id="a1" onclick="boxclick(this.id)" 
+		style="position: absolute; top:0px; left:380px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
 		</div>
 
-		<div id="boxtwo" style="position: absolute; top:0px; left:570px;">
-		<img src="otictactoe.png">
+		<div id="a2" onclick="boxclick(this.id)" 
+		style="position: absolute; top:0px; left:580px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
 		</div>
 
-		<div id="boxthree" style="position: absolute; top:0px; left:770px;">
-		<img src="otictactoe.png">
+		<div id="a3" onclick="boxclick(this.id)" 
+		style="position: absolute; top:0px; left:780px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
 		</div>
 
-		<div id="boxfour" style="position: absolute; top:180px; left:370px;">
-		<img src="otictactoe.png">
+		<div id="b1" onclick="boxclick(this.id)" 
+		style="position: absolute; top:180px; left:380px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
 		</div>
 
-		<div id="boxfive" style="position: absolute; top:180px; left:570px;">
-		<img src="otictactoe.png">
+		<div id="b2" onclick="boxclick(this.id)" 
+		style="position: absolute; top:180px; left:580px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
 		</div>
 
-		<div id="boxsix" style="position: absolute; top:180px; left:770px;">
-		<img src="otictactoe.png">
+		<div id="b3" onclick="boxclick(this.id)" 
+		style="position: absolute; top:180px; left:780px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
 		</div>
 
-		<div id="boxseven" style="position: absolute; top:360px; left:370px;">
-		<img src="otictactoe.png">
+		<div id="c1" onclick="boxclick(this.id)" 
+		style="position: absolute; top:360px; left:380px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
 		</div>
 
-		<div id="boxeight" style="position: absolute; top:360px; left:570px;">
-		<img src="otictactoe.png">
+		<div id="c2" onclick="boxclick(this.id)" 
+		style="position: absolute; top:360px; left:580px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
 		</div>
 
-		<div id="boxnine" style="position: absolute; top:360px; left:770px;">
-		<img src="otictactoe.png">
+		<div id="c3" onclick="boxclick(this.id)" 
+		style="position: absolute; top:360px; left:780px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
 		</div>
 	</div>
-
 
 </body>
 
