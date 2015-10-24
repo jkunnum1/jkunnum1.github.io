@@ -3,22 +3,26 @@
 <style>
 </style>
 <script type="text/javascript">
-var num = 0
+var num = 0;
+var winner = false;
 function boxclick(eleID) {
-	if (num % 2 == 0)
+	if (winner == false)
 	{
-		document.getElementById(eleID).innerHTML = 'X';
-		document.getElementById(eleID).onclick = null;
-		a1 = document.getElementById(eleID).value = 'x';
+		if (num % 2 == 0)
+		{
+			document.getElementById(eleID).innerHTML = 'X';
+			document.getElementById(eleID).onclick = false;
+			a1 = document.getElementById(eleID).value = 'x';
+		}
+		else
+		{
+			document.getElementById(eleID).innerHTML = 'O';
+			document.getElementById(eleID).onclick = false;
+			a1 = document.getElementById(eleID).value = 'o';
+		}
+		num = num + 1;
+		checkWinner()
 	}
-	else
-	{
-		document.getElementById(eleID).innerHTML = 'O';
-		document.getElementById(eleID).onclick = null;
-		a1 = document.getElementById(eleID).value = 'o';
-	}
-	num = num + 1;
-	checkWinner()
 }
 function checkWinner(){
 	a1 = document.getElementById("a1").value;
@@ -42,6 +46,7 @@ function checkWinner(){
 		(a3 == b3 && b3 == c3 && (a3 == 'x'))
 		){
 		document.getElementById("test").innerHTML = "X IS THE WINNER!!";
+		winner = true;
 	}
 	else{
 		if ((a1 == a2 && a2 == a3 && (a1 == 'o')) ||
@@ -54,15 +59,18 @@ function checkWinner(){
 		(a3 == b3 && b3 == c3 && (a3 == 'o'))
 		){
 		document.getElementById("test").innerHTML = "O IS THE WINNER!!";
-	}
-		
+		winner = true;
+		}
+		}
 }
+function clearboard() {
+	location.reload();
 }
 </script>
 </header>
 
 <body>
-<marquee style="font-size:100; color:blue" scrollamount="20">
+<marquee style="font-size:100; color:green" scrollamount="20">
 	Let's Play Tic-Tac-Toe!
 	</marquee>
 	<div id="test" style="font-size:30; color:orange; text-align:center">
@@ -114,6 +122,11 @@ function checkWinner(){
 		style="position: absolute; top:360px; left:780px; color:rgba(0,0,0,1); font-size:100pt;">
 			<div style="color:rgba(0,0,0,0);"> hit </div>
 		</div>
+	</div>
+	<div>
+	<center> <button onclick="clearboard()" 
+		style="font-size:12pt; font-weight:bold; padding: 10px 15px; 
+		background-color: green; border-radius:3px;"> Restart </button> </center>
 	</div>
 
 </body>
