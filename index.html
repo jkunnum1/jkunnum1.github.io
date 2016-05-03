@@ -1,81 +1,157 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Linear by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html>
-<header>
-<style>
-body {
-	background-image: url("background.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-</style>
-<script src="jsfunctions.js">
-</script>
-</header>
+	<head>
+		<title>Linear by TEMPLATED</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+	</head>
+	<body class="homepage">
 
-<body>
-<marquee style="font-size:100pt; color:green" scrollamount="20">
-	Let's Play Tic-Tac-Toe!
-	</marquee>
-	<div style="font-size:24pt; color:green; text-align:center"> 
-		Player 1: 'X'    Player 2: 'O' 
-	</div>
-	<div id="test" style="font-size:30pt; color:purple; text-align:center">
-		
-	</div>
-
-	<div style="position: relative; left:0; top:0;">
-		<center> <img src="tttboard.png"> </center>
-		<div id="a1" onclick="boxclick(this.id)" 
-		style="position: absolute; top:0px; left:380px; color:rgba(0,0,0,1); font-size:100pt;">
-			<div style="color:rgba(0,0,0,0);"> hit </div>
+	<!-- Header -->
+		<div id="header">
+			<div id="nav-wrapper"> 
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li class="active"><a href="index.html">Homepage</a></li>
+						<li><a href="left-sidebar.html">Left Sidebar</a></li>
+						<li><a href="right-sidebar.html">Right Sidebar</a></li>
+						<li><a href="no-sidebar.html">No Sidebar</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="#">Linear</a></h1>
+					<span class="tag">By TEMPLATED</span>
+				</div>
+			</div>
 		</div>
 
-		<div id="a2" onclick="boxclick(this.id)" 
-		style="position: absolute; top:0px; left:580px; color:rgba(0,0,0,1); font-size:100pt;">
-			<div style="color:rgba(0,0,0,0);"> hit </div>
+	<!-- Featured -->
+		<div id="featured">
+			<div class="container">
+				<header>
+					<h2>Welcome to Linear</h2>
+				</header>
+				<p>This is <strong>Linear</strong>, a responsive HTML5 site template freebie by <a href="http://templated.co">TEMPLATED</a>. Released for free under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so use it for whatever (personal or commercial) &ndash; just give us credit! Check out more of our stuff at <a href="http://templated.co">our site</a> or follow us on <a href="http://twitter.com/templatedco">Twitter</a>.</p>
+				<hr />
+				<div class="row">
+					<section class="4u">
+						<span class="pennant"><span class="fa fa-briefcase"></span></span>
+						<h3>Maecenas luctus lectus</h3>
+						<p>Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
+						<a href="#" class="button button-style1">Read More</a>
+					</section>
+					<section class="4u">
+						<span class="pennant"><span class="fa fa-lock"></span></span>
+						<h3>Maecenas luctus lectus</h3>
+						<p>Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec magna.</p>
+						<a href="#" class="button button-style1">Read More</a>
+					</section>
+					<section class="4u">
+						<span class="pennant"><span class="fa fa-globe"></span></span>
+						<h3>Maecenas luctus lectus</h3>
+						<p>Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
+						<a href="#" class="button button-style1">Read More</a>
+					</section>
+
+				</div>
+			</div>
 		</div>
 
-		<div id="a3" onclick="boxclick(this.id)" 
-		style="position: absolute; top:0px; left:780px; color:rgba(0,0,0,1); font-size:100pt;">
-			<div style="color:rgba(0,0,0,0);"> hit </div>
+	<!-- Main -->
+		<div id="main">
+			<div id="content" class="container">
+
+				<div class="row">
+					<section class="6u">
+						<a href="#" class="image full"><img src="images/pic01.jpg" alt=""></a>
+						<header>
+							<h2>Mauris vulputate dolor</h2>
+						</header>
+						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
+					</section>				
+					<section class="6u">
+						<a href="#" class="image full"><img src="images/pic02.jpg" alt=""></a>
+						<header>
+							<h2>Mauris vulputate dolor</h2>
+						</header>
+						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
+					</section>				
+				</div>
+
+				<div class="row">
+					<section class="6u">
+						<a href="#" class="image full"><img src="images/pic03.jpg" alt=""></a>
+						<header>
+							<h2>Mauris vulputate dolor</h2>
+						</header>
+						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
+					</section>				
+					<section class="6u">
+						<a href="#" class="image full"><img src="images/pic04.jpg" alt=""></a>
+						<header>
+							<h2>Mauris vulputate dolor</h2>
+						</header>
+						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
+					</section>				
+				</div>
+			
+			</div>
 		</div>
 
-		<div id="b1" onclick="boxclick(this.id)" 
-		style="position: absolute; top:180px; left:380px; color:rgba(0,0,0,1); font-size:100pt;">
-			<div style="color:rgba(0,0,0,0);"> hit </div>
+	<!-- Tweet -->
+		<div id="tweet">
+			<div class="container">
+				<section>
+					<blockquote>&ldquo;In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat.&rdquo;</blockquote>
+				</section>
+			</div>
 		</div>
 
-		<div id="b2" onclick="boxclick(this.id)" 
-		style="position: absolute; top:180px; left:580px; color:rgba(0,0,0,1); font-size:100pt;">
-			<div style="color:rgba(0,0,0,0);"> hit </div>
+	<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<section>
+					<header>
+						<h2>Get in touch</h2>
+						<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+					</header>
+					<ul class="contact">
+						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
+						<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+						<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
+						<li><a href="#" class="fa fa-tumblr"><span>Google+</span></a></li>
+					</ul>
+				</section>
+			</div>
 		</div>
 
-		<div id="b3" onclick="boxclick(this.id)" 
-		style="position: absolute; top:180px; left:780px; color:rgba(0,0,0,1); font-size:100pt;">
-			<div style="color:rgba(0,0,0,0);"> hit </div>
+	<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+			</div>
 		</div>
 
-		<div id="c1" onclick="boxclick(this.id)" 
-		style="position: absolute; top:360px; left:380px; color:rgba(0,0,0,1); font-size:100pt;">
-			<div style="color:rgba(0,0,0,0);"> hit </div>
-		</div>
-
-		<div id="c2" onclick="boxclick(this.id)" 
-		style="position: absolute; top:360px; left:580px; color:rgba(0,0,0,1); font-size:100pt;">
-			<div style="color:rgba(0,0,0,0);"> hit </div>
-		</div>
-
-		<div id="c3" onclick="boxclick(this.id)" 
-		style="position: absolute; top:360px; left:780px; color:rgba(0,0,0,1); font-size:100pt;">
-			<div style="color:rgba(0,0,0,0);"> hit </div>
-		</div>
-	</div>
-	<div>
-	<center> <button onclick="clearboard()" 
-		style="font-size:12pt; font-weight:bold; padding: 10px 15px; 
-		background-color: green; border-radius:3px;"> Restart </button> </center>
-	</div>
-
-</body>
-
+	</body>
 </html>

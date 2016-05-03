@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<header>
+<style>
+body {
+	background-image: url("background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+</style>
+<script src="jsfunctions.js">
+</script>
+</header>
+
+<body>
+<marquee style="font-size:100pt; color:green" scrollamount="20">
+	Let's Play Tic-Tac-Toe!
+	</marquee>
+	<div style="font-size:24pt; color:green; text-align:center"> 
+		Player 1: 'X'    Player 2: 'O' 
+	</div>
+	<div id="test" style="font-size:30pt; color:purple; text-align:center">
+		
+	</div>
+
+	<div style="position: relative; left:0; top:0;">
+		<center> <img src="tttboard.png"> </center>
+		<div id="a1" onclick="boxclick(this.id)" 
+		style="position: absolute; top:0px; left:380px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
+		</div>
+
+		<div id="a2" onclick="boxclick(this.id)" 
+		style="position: absolute; top:0px; left:580px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
+		</div>
+
+		<div id="a3" onclick="boxclick(this.id)" 
+		style="position: absolute; top:0px; left:780px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
+		</div>
+
+		<div id="b1" onclick="boxclick(this.id)" 
+		style="position: absolute; top:180px; left:380px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
+		</div>
+
+		<div id="b2" onclick="boxclick(this.id)" 
+		style="position: absolute; top:180px; left:580px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
+		</div>
+
+		<div id="b3" onclick="boxclick(this.id)" 
+		style="position: absolute; top:180px; left:780px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
+		</div>
+
+		<div id="c1" onclick="boxclick(this.id)" 
+		style="position: absolute; top:360px; left:380px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
+		</div>
+
+		<div id="c2" onclick="boxclick(this.id)" 
+		style="position: absolute; top:360px; left:580px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
+		</div>
+
+		<div id="c3" onclick="boxclick(this.id)" 
+		style="position: absolute; top:360px; left:780px; color:rgba(0,0,0,1); font-size:100pt;">
+			<div style="color:rgba(0,0,0,0);"> hit </div>
+		</div>
+	</div>
+	<div>
+	<center> <button onclick="clearboard()" 
+		style="font-size:12pt; font-weight:bold; padding: 10px 15px; 
+		background-color: green; border-radius:3px;"> Restart </button> </center>
+	</div>
+
+</body>
+
+</html>
