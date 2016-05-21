@@ -77,13 +77,34 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Hello, it me.</h1>
-                        <p class="intro-text">Welcome to my website!</p>
+                        <!-- Button trigger modal -->
+<div class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Python Game Suite
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="color: black;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Python Game Suite</h4>
+      </div>
+      <div class="modal-body" style="color: black;">
+        This is where the content goes
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    
 
     <!-- Footer -->
     <footer>
@@ -106,7 +127,14 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
-    
+    <script type="text/javascript">
+        $(document).ready(function(){
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+        });
+});
+    </script>
+
 </body>
 
 </html>
