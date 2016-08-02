@@ -10,7 +10,7 @@ body {
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     /*background-color: #000;*/
-    background: url(../img/abstract-grey-background.png) no-repeat center center scroll;
+    background: url(../img/abstract-grey-background.png) repeat center center scroll;
 }
 
 html {
@@ -45,6 +45,13 @@ p {
     }
 }
 
+@media(max-width: 767px) {
+    #julie_intro {
+        margin:0px; 
+        padding: 0px;
+    }
+
+}
 a {
     color: #42dca3;
     -webkit-transition: all .2s ease-in-out;
