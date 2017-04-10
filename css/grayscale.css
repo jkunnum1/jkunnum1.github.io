@@ -161,7 +161,7 @@ a:focus {
 }
 
 .group {
-     background: url(../img/close.jpeg);
+     background: url(../img/close.jpg);
     display: table;
     width: 100%;
     height: 50%;
@@ -179,10 +179,10 @@ a:focus {
 }
 
 .info {
-    background: url(../img/infographic.png);
+    background: url(../img/infographic.jpeg);
     display: table;
-    width: 45%;
-    height: 70%;
+    height: 400px;
+    width: 400px;
     margin: auto;
     padding: 100px 0;
     text-align: center;
@@ -193,6 +193,54 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+@media(max-width: 450px) {
+    .intro {
+        background: url(../img/matias-walk.jpg);
+        display: table;
+        width: 100%;
+        height: 100%;
+        padding: 100px 0;
+        text-align: center;
+        color: #fff;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+    .group {
+        background: url(../img/close-mobile.jpg);
+        display: table;
+        width: 100%;
+        height: 50%;
+        padding: 100px 0;
+        text-align: center;
+        color: #fff;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+    .info {
+        background: url(../img/infographic.jpeg);
+        display: table;
+        height: 50%;
+        width: 80%;
+        margin: auto;
+        padding: 100px 0;
+        text-align: center;
+        color: #fff;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
 }
 
 .intro .intro-body {
