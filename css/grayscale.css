@@ -51,7 +51,15 @@ p {
         padding: 0px;
     }
     .intro {
-        background-attachment: scroll;
+        background-size: 400px auto;
+    }
+    
+    .group {
+        background-size: 400px auto;
+    }
+
+    .info {
+        background-size: 400px auto;
     }
 
 }
