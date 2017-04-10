@@ -161,7 +161,7 @@ a:focus {
 }
 
 .group {
-     background: url(../img/close.JPG);
+     background: url(../img/close.png);
     display: table;
     height: 50%;
     width: 100%;
@@ -212,7 +212,7 @@ a:focus {
     }
 
     .group {
-        background: url(../img/close-mobile.JPG);
+        background: url(../img/close-mobile.png);
         display: table;
         height: 50%;
         width: 100%;
